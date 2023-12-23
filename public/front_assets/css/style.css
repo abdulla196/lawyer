@@ -1,0 +1,359 @@
+
+/* body {
+} */
+
+.home {
+    background-image: url(../images/5.png);
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+
+.home .image-overlay {
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(25, 96, 240, 0.5);
+}
+
+.home h2 {
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 1.3;
+    color: #fff;
+}
+
+.home h1 {
+    font-weight: 900;
+    font-size: 38px;
+    line-height: 1.2;
+    color: #ff9b0f;
+}
+
+.home p {
+    color: #fff;
+}
+
+.home .btn {
+    width: 250px;
+    height: 70px;
+    margin-top: 20px;
+    font-weight: 800;
+    font-size: 28px;
+}
+
+.home .btn-contact {
+    background: transparent;
+    border-color: #fff;
+    margin-left: 20px;
+}
+
+.home .btn-service:hover {
+    background: #000;
+    border-color: #000;
+}
+
+.work-us {
+    margin-top: 50px;
+}
+
+.work-us h2 {
+    font-size: 22px;
+    font-weight: 900;
+    margin-bottom: 50px;
+}
+
+.work-us h1 {
+    font-size: 28px;
+    margin-top: 50px;
+    font-weight: 900;
+}
+
+.work-us .cards {
+    margin-top: 50px
+}
+
+.work-us .card {
+    border-top: none;
+    border-left: none;
+    align-items: flex-start;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.work-us .card h4 {
+    font-weight: 900;
+    font-size: 28px;
+}
+
+.services-dubai {
+    background: #FEFEFE;
+    margin-top: 100px;
+}
+
+.our-services {
+    margin-top: 10px;
+}
+
+.our-services h1 {
+    text-align: center;
+    font-weight: 900;
+    margin-bottom: 30px;
+}
+
+.our-services .card {
+    align-items: flex-start;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 30px;
+    box-shadow: 5px 10px 5px 10px #F0F0F0;
+    margin-bottom: 30px;
+}
+
+.which-type {
+    margin-top: 100px;
+}
+
+.which-type h1 {
+    text-align: center;
+    font-weight: 900;
+    font-size: 28px;
+}
+
+.which-type .card {
+    margin-top: 70px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 30px;
+    box-shadow: 5px 10px 5px 10px #F0F0F0;
+    margin-bottom: 30px;
+}
+
+.which-type .card  p {
+    font-size: 18px;
+}
+
+.which-type .card a p {
+    display: inline;
+    margin-right: 10px;
+}
+
+.which-type .btn-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
+}
+
+.which-type .btn {
+    width: 400px;
+    height: 50px;
+    font-size: 22px;
+    font-weight: 900;
+    border-radius: 0;
+    background-color: #1860F0;
+}
+
+.attestation .first {
+    background-image: url(../images/first.png);
+}
+
+.how-we {
+    margin-top: 50px;
+}
+
+.how-we h1 {
+    text-align: center;
+    font-weight: 900;
+    margin-bottom: 50px;
+}
+
+.how-we .images {
+    display: flex;
+}
+
+.how-we .image {
+    box-shadow: 0px 0px #00000070;
+    padding-top: 350px;
+    padding-bottom: 50px;
+    padding-left: 50px;
+    padding-right: 100px;
+    row-gap: 20px;
+    column-gap: 20px;
+    overflow: visible;
+    border-color: inherit;
+    background-repeat: no-repeat;
+    background-position: 44% 51%;
+    background-size: cover;
+    background-attachment: scroll;
+    background-clip: padding-box;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+}
+
+.how-we .img-1 {
+    background-image: url(../images/home-1.png);
+}
+
+.how-we .img-2 {
+    background-image: url(../images/home-2.png);
+
+}
+
+.how-we .img-3 {
+    background-image: url(../images/home-3.png);
+
+}
+
+.how-we .img-4 {
+    background-image: url(../images/home-4.png);
+}
+
+.how-we .image .image-overlay {
+    background-color: RGB(129, 136, 148, 0.7);
+}
+
+.how-we .image h3 {
+    color: #fff;
+    font-weight: 900;
+}
+
+.how-we .image p {
+    color: #fff;
+}
+
+.notarization {
+    margin-top: 100px;
+}
+
+.notarization h5 {
+    font-weight: 900;
+}
+
+.more {
+    margin-top: 80px;
+}
+
+.more .btn-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
+}
+
+.more .btn {
+    width: 300px;
+    height: 50px;
+    font-size: 22px;
+    font-weight: 900;
+    border-radius: 0;
+    background-color: #1860F0;
+}
+
+.faqs {
+    margin-top: 80px;
+}
+
+.faqs h1 {
+    text-align: center;
+    font-weight: 900;
+    font-size: 28px;
+    margin-bottom: 50px;
+}
+
+.faqs__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.5rem;
+}
+
+.faq {
+    padding: 2rem;
+    gap: 1rem;
+    height: fit-content;
+    border: 1px solid #D2D2D2;
+    cursor: pointer;
+}
+
+.faq__icon {
+    align-self: flex-start;
+    font-size: 1.2rem;
+    align-items: center;
+}
+
+.faq p {
+    margin-top: 0.8rem;
+    display: none;
+}
+
+.faq.open p {
+    display: block;
+}
+.question__answer{
+    padding: 0 2rem;
+}
+.faqs__container {
+    grid-template-columns: 1fr;
+}
+
+.faq {
+    padding: 0.5rem;
+}
+
+.blogs {
+    margin-top: 100px;
+}
+
+.blogs h1 {
+    text-align: center;
+    font-weight: 900;
+    font-size: 32px;
+    margin-bottom: 50px;
+}
+
+.blogs .card {
+    background-color: #F5F7FA;
+    border-color: #F5F7FA;
+    box-shadow: 10px 10px 30px 1px rgba(0, 0, 0, 0.2);
+    margin-top: 40px;
+}
+
+.blogs .card-content {
+    margin: 15px;
+}
+
+.blogs a p {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 28px;
+    font-weight: 700;
+    color: #000;
+}
+
+.visit {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.visit p {
+    font-weight: 500;
+    font-size: 22px;
+    color: #000;
+}
+
+.visit h1 {
+    font-weight: 900;
+    font-size: 52px;
+    color: #000;
+}
+
+.visit .btn {
+    background-color: #000;
+    width: 600px;
+    height: 60px;
+    border-color: #000;
+    border-radius: 30px;
+    font-weight: 900;
+    font-size: 22px;
+}

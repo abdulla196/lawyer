@@ -1,0 +1,96 @@
+.home {
+    background-image: url(../images/About-Us.png);
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    height: 80vh;
+}
+
+.home .image-overlay {
+    width: 100%;
+    height: 80vh;
+    background-color: rgba(152, 194, 213, 0.5);
+}
+
+.home h2 {
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 1.3;
+    color: #fff;
+}
+
+.who-we {
+    margin-top: 100px;
+}
+
+.few-words .center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.call-today {
+    background-image: url(../images/aboutus-.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    height: 50vh;
+}
+
+.call-today .line {
+    padding-top: 110px;
+}
+
+.call-today .content {
+    margin-top: 20px;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    color: #fff;
+}
+
+.call-today .content h3 {
+    font-weight: 800;
+    font-size: 32px;
+}
+
+.call-today .content p {
+    font-weight: 500;
+}
+
+
+.call-today .btn {
+        width: 400px;
+        height: 50px;
+        font-size: 22px;
+        border-radius: 0;
+        background-color: #1860F0;
+}
+
+.call-today .btn:hover {
+    background-color: #000;
+}
+
+.our-service {
+    text-align: center;
+}
+
+.our-service h2 {
+    margin-top: 50px;
+    color: #1860F0;
+}
+
+.our-service .card {
+    border: none;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.card-content i {
+    font-size: 100px;
+    margin-bottom: 20px;
+}
+
+.card-content i:hover {
+    color: #1860F0;
+}

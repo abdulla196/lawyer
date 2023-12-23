@@ -1,0 +1,40 @@
+.home {
+    background-image: url(../images/blog-main.jpg);
+    background-size: cover;
+}
+
+.home .image-overlay {
+    width: 100%;
+    height: 70vh;
+    background-color: RGB(62, 62, 62, 0.8);
+}
+
+.home p {
+    font-size: 24px;
+    font-weight: 500;
+    color: #fff;
+    text-align: center;
+    margin: 0;
+}
+.home h4{
+    font-weight: 900;
+    font-size: 32px;
+    color: #fff;
+    text-align: center;
+    margin: 0;
+}
+
+.blogs {
+    margin-top: 100px;
+}
+
+.card {
+    background-color: #F5F7FA;
+    border-color: #F5F7FA;
+    box-shadow: 10px 10px 30px 1px rgba(0, 0, 0, 0.2);
+    margin-top: 40px;
+}
+
+.card-content {
+    margin: 15px;
+}
