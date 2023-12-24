@@ -69,7 +69,7 @@
         <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
             <ul class="navbar-nav pull-right">
                 <li class="nav-item">
-                    <a class="nav-link" href="{{route('home')}}">Home</a>
+                    <a class="nav-link" href="{{route('main')}}">Home</a>
                 </li>
                 <li class="nav-item dropdown">
                     <a href="{{route('services')}}" class="nav-link dropbtn">Our Services</a>

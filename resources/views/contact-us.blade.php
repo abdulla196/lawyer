@@ -144,44 +144,34 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-md-3">
+                            <div class="col-md-4">
                                 <div class="dbox w-100 text-center">
                                     <div class="icon d-flex align-items-center justify-content-center">
                                         <span class="fa fa-map-marker"></span>
                                     </div>
                                     <div class="text">
-                                        <p><span>Address:</span> 198 West 21th Street, Suite 721 New York NY 10016</p>
+                                        <p><span>Address:</span> {{$setting->address}}</p>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-3">
+                            <div class="col-md-4">
                                 <div class="dbox w-100 text-center">
                                     <div class="icon d-flex align-items-center justify-content-center">
                                         <span class="fa fa-phone"></span>
                                     </div>
                                     <div class="text">
-                                        <p><span>Phone:</span> <a href="tel://1234567920">+ 1235 2355 98</a></p>
+                                        <p><span>Phone:</span> <a href="tel://{{$setting->phone}}">{{$setting->phone}}</a></p>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-3">
+                            <div class="col-md-4">
                                 <div class="dbox w-100 text-center">
                                     <div class="icon d-flex align-items-center justify-content-center">
                                         <span class="fa fa-paper-plane"></span>
                                     </div>
                                     <div class="text">
-                                        <p><span>Email:</span> <a href="mailto:info@yoursite.com">info@yoursite.com</a>
+                                        <p><span>Email:</span> <a href="mailto:{{$setting->email}}">{{$setting->email}}</a>
                                         </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-3">
-                                <div class="dbox w-100 text-center">
-                                    <div class="icon d-flex align-items-center justify-content-center">
-                                        <span class="fa fa-globe"></span>
-                                    </div>
-                                    <div class="text">
-                                        <p><span>Website</span> <a href="#">yoursite.com</a></p>
                                     </div>
                                 </div>
                             </div>
