@@ -107,7 +107,7 @@
                 <div class="col-xl-4">
 
                     <div class="card card-defualt">
-                        <div class="card-header"><i class="far fa-id-badge"></i> QrCode </div>
+                        <div class="card-header"><i class="far fa-id-badge"></i> Image </div>
                         <div class="card-body px-3">
                             <div class="avatar-preview" style="background-image: url({{ isset($blog) ?  asset($blog->image)  : asset('images/no-image.png') }})"></div>
                             <div class="my-2 text-left">

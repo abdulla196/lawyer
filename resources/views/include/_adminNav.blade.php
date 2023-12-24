@@ -39,7 +39,7 @@
                   </li>
                   <li class="nav-item">
                       <a class="nav-link collapsed" href="#navbar-blogs" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="navbar-blogs">
-                          <i class="fas fa-clipboard"></i>
+                          <i class="fas fa-archive"></i>
                           <span class="nav-link-text">Blogs</span>
                       </a>
                       <div class="collapse" id="navbar-blogs" style="">
@@ -63,18 +63,40 @@
                       </div>
                   </li>
                   <li class="nav-item">
-                      <a class="nav-link {{request()->routeIs('faq.index') ? 'active' : '' }}" href="{{route('faq.index')}}">
+                      <a class="nav-link collapsed" href="#navbar-faq" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="navbar-faq">
+
                           <i class="fas fa-comment-dots"></i>
-                          <span class="nav-link-text">FAQs</span>
+                          <span class="nav-link-text">FAQ</span>
                       </a>
+                  <div class="collapse" id="navbar-faq" style="">
+                      <ul class="nav nav-sm flex-column">
+
+                          <li class="nav-item">
+                              <a href="{{ route('faq.create')}}" class="nav-link nav-link-sub {{request()->routeIs('faq.create') ? 'active' : '' }}">
+
+                                  <i class="fas fa-comment-dots"></i>
+                                  <span class="sidenav-normal">Add faq Blogs</span>
+                              </a>
+                          </li>
+
+                          <li class="nav-item">
+                              <a href="{{ route('faq.index')}}" class="nav-link nav-link-sub {{request()->routeIs('faq.index') ? 'active' : '' }}">
+
+                                  <i class="fas fa-comment-dots"></i>
+                                  <span class="sidenav-normal">faq List</span>
+                              </a>
+                          </li>
+
+                      </ul>
+                  </div>
                   </li>
 
-                  <li class="nav-item">
-                      <a class="nav-link {{request()->routeIs('achievements.index') ? 'active' : '' }}" href="{{route('achievements.index')}}">
-                          <i class="fas fa-certificate"></i>
-                          <span class="nav-link-text">Achievements</span>
-                      </a>
-                  </li>
+{{--                  <li class="nav-item">--}}
+{{--                      <a class="nav-link {{request()->routeIs('achievements.index') ? 'active' : '' }}" href="{{route('achievements.index')}}">--}}
+{{--                          <i class="fas fa-certificate"></i>--}}
+{{--                          <span class="nav-link-text">Achievements</span>--}}
+{{--                      </a>--}}
+{{--                  </li>--}}
 
                   <li class="nav-item">
                     <a class="nav-link {{request()->routeIs('messages') ? 'active' : '' }}" href="{{route('messages')}}">
@@ -82,9 +104,19 @@
                         <span class="nav-link-text">Messages</span>
                     </a>
                   </li>
+                  <li class="nav-item">
+                      <a class="nav-link {{request()->routeIs('settings') ? 'active' : '' }}" href="{{route('settings.index')}}">
+                          <i class="ni ni-settings-gear-65"></i>
+                          <span class="nav-link-text">{{__('master.SETTINGS')}}</span>
+                      </a>
+                  </li>
 
-
-
+                  <li class="nav-item">
+                      <a class="nav-link {{request()->routeIs('social') ? 'active' : '' }}" href="{{route('social.index')}}">
+                          <i class="ni ni-controller"></i>
+                          <span class="nav-link-text">{{__('master.SOCIAL')}}</span>
+                      </a>
+                  </li>
               </ul>
               <!-- Divider -->
               <hr class="my-3">

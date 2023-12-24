@@ -17,7 +17,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 Route::prefix('/')->group(function () {
-    Route::get('', [\App\Http\Controllers\Front\FrontController::class, 'index'])->name('home');
+    Route::get('', [\App\Http\Controllers\Front\FrontController::class, 'index'])->name('main');
     Route::get('about', [\App\Http\Controllers\Front\FrontController::class, 'AboutUS'])->name('about');
     Route::get('contact-us', [\App\Http\Controllers\Front\FrontController::class, 'ContactUs'])->name('contactUs');
     Route::post('contact', [\App\Http\Controllers\Front\FrontController::class, 'StoreContact'])->name('StoreContact');
@@ -30,7 +30,7 @@ Route::prefix('/')->group(function () {
 });
 
 Route::middleware(['auth', 'admin'])->prefix('admin')->group(function () {
-    Route::get('/', [\App\Http\Controllers\Admin\AdminController::class, 'index'])->name('admin');
+    Route::get('/', [\App\Http\Controllers\Admin\AdminController::class, 'index'])->name('home');
     Route::get('/achievements', [\App\Http\Controllers\Admin\AdminController::class, 'Achievements'])->name('achievements.index');
     Route::get('/messages', [\App\Http\Controllers\Admin\AdminController::class, 'Messages'])->name('messages');
     Route::get('/messages/{id}', [\App\Http\Controllers\Admin\AdminController::class, 'ChangeStatus'])->name('message.contacted');
@@ -44,12 +44,14 @@ Route::middleware(['auth', 'admin'])->prefix('admin')->group(function () {
         Route::get('delete/{id}', [\App\Http\Controllers\Admin\ServicesController::class, 'destroy'])->name('services.delete');
     });
     Route::prefix('/settings')->group(function () {
-        Route::get('', [\App\Http\Controllers\Admin\ServicesController::class, 'index'])->name('settings.index');
-        Route::get('/create', [\App\Http\Controllers\Admin\ServicesController::class, 'create'])->name('settings.create');
-        Route::post('/store', [\App\Http\Controllers\Admin\ServicesController::class, 'store'])->name('settings.store');
-        Route::get('/edit/{id}', [\App\Http\Controllers\Admin\ServicesController::class, 'edit'])->name('settings.edit');
-        Route::put('update/{id}', [\App\Http\Controllers\Admin\ServicesController::class, 'update'])->name('settings.update');
-        Route::get('delete/{id}', [\App\Http\Controllers\Admin\ServicesController::class, 'destroy'])->name('settings.delete');
+        Route::get('', [\App\Http\Controllers\Admin\SettingsController::class, 'index'])->name('settings.index');
+        Route::post('/store', [\App\Http\Controllers\Admin\SettingsController::class, 'store'])->name('settings.store');
+        Route::put('update/{id}', [\App\Http\Controllers\Admin\SettingsController::class, 'update'])->name('settings.update');
+    });
+    Route::prefix('/social')->group(function () {
+        Route::get('', [\App\Http\Controllers\Admin\SettingsController::class, 'SocialIndex'])->name('social.index');
+        Route::post('/store', [\App\Http\Controllers\Admin\SettingsController::class, 'SocialStore'])->name('social.store');
+        Route::put('update/{id}', [\App\Http\Controllers\Admin\SettingsController::class, 'SocialUpdate'])->name('social.update');
     });
     Route::prefix('/blogs')->group(function () {
         Route::get('', [\App\Http\Controllers\Admin\BlogsController::class, 'index'])->name('blogs.index');

@@ -9,8 +9,8 @@ return [
     |
     |
     */
-    
-    
+
+
     "ENGLISH" => "English",
     "ARABIC" => "Arabic",
     "DASHBOARD" => "Dashboard",
@@ -62,7 +62,7 @@ return [
     "YEAR" => "Year",
     "TOTAL" => "Total",
     "REMAIN" => "Remain",
-    
+
     "DASHBOARD" => "Dashboard",
     "HOME" => "Home",
     "NOTES" => "Notes",
@@ -82,10 +82,10 @@ return [
     "ITEM-CODE" => "Item Code",
     "SELECT" => "Select",
     "SELECT-DATE" => "Select Date",
-   
-    "MALE" => "Male",       
+
+    "MALE" => "Male",
     "FEMALE" => "Female",
-    "Male" => "Male",       
+    "Male" => "Male",
     "Female" => "Female",
     "LANGUAGE" => "Language",
     "ENGLISH" => "English",
@@ -120,7 +120,7 @@ return [
     "ROLES" => "Roles & Permissions",
     "PERMISSIONS" => "Permissions",
     "ADD-NEW-ROLE" => "Add New Role",
-    "ROLE-NAME" => "Role Name",    
+    "ROLE-NAME" => "Role Name",
     "ALL-ROLES" => "All Roles",
     "TOTAL-ROLES" => "Total Roles",
     "NO-ROLES-FOUND" => "No Roles Found",
@@ -143,7 +143,7 @@ return [
     "CITY" => "City",
     "ADDRESS" => "Address",
     "PRICE" => "Price",
-    
+
     "AGE" => "Age",
     "PROFILE-PICTURE" => "Profile Picture",
     "CHANGE-PROFILE-PICTURE" => "Change Profile Picture",
@@ -158,8 +158,8 @@ return [
 
 
 
- 
-    
+
+
     "RELATIONSHIP-STATUS" => "Relationship Status",
     "SINGLE" => "Single",
     "ENGAGED" => "Engaged",
@@ -173,6 +173,7 @@ return [
     "DATA-CHANGED-SUCCESSFULLY" => "Data Changed Successfully.",
     "SOMETHING-WRONG" => "Something went wrong, please try again later",
 
+    "SOCIAL" => "Social Media",
     "ALL-COURSES" => "All Courses",
     "COURSES" => "Courses",
     "COURSE" => "Course",

@@ -43,7 +43,7 @@ class FrontController extends Controller
         return view('blogs-details',compact('blog'));
     }
     public function Services(){
-
+        return view('our-services');
     }
     public function ServicesDetails($service)
     {

@@ -84,7 +84,7 @@
                                         <td>{{ $loop->iteration }}</td>
                                         <td><b>{{  $item->question }}</b></td>
                                         <td>{!!$item->answer !!}</td>
-                                        <td>
+                                        <td class="d-flex">
                                             <a href="{{ route('faq.edit', $item->id)}}" class="btn btn-primary float-left btn-sm mx-1"><i class="fa fa-edit"></i> Edit</a>
                                             <a href="{{route('faq.delete', $item->id)}}" class="btn btn-danger float-left btn-sm mx-1"><i class="fa fa-trash-alt"></i> Remove</a>
                                         </td>

@@ -78,7 +78,7 @@
                                             <td><strong> {{  $item->title }} </strong></td>
                                             <td><strong> <a href="{{"../".$item->url }}" target="_blank">{{  $item->url }}</a> </strong></td>
 
-                                            <td>
+                                            <td class="d-flex">
                                                 <a data-toggle="tooltip" data-placement="top" href="{{ route('blogs.delete', $item->id)}}" class="btn btn-danger btn-sm mx-1 px-3"> <i class="fa fa-trash"></i> </a>
                                                 <a data-toggle="tooltip" data-placement="top" title="{{__('master.EDIT')}}" href="{{ route('blogs.edit', $item->id)}}" class="btn btn-secondary btn-sm mx-1 px-3"> <i class="fa fa-edit"></i> </a>
                                             </td>

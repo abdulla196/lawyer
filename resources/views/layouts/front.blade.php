@@ -38,20 +38,20 @@
 <header class="container">
     <ul class="nav justify-content-end">
         <li class="nav-item">
-            <a class="nav-link" href="#"><i style="color: #E48018;"
+            <a class="nav-link" href="{{'tel:'.$setting->consultation}}" target="_blank"><i style="color: #E48018;"
                                             class="fa-solid fa-handshake-simple-slash"></i>Book Consultation</a>
         </li>
         <div class="line"></div>
         <li class="nav-item">
-            <a class="nav-link" href="#"><i style="color:#1860F0;" class="fa-solid fa-square-phone"></i>Call Now</a>
+            <a class="nav-link" href="{{'tel:'.$setting->phone}}" target="_blank"><i style="color:#1860F0;" class="fa-solid fa-square-phone"></i>Call Now</a>
         </li>
         <div class="line"></div>
         <li class="nav-item">
-            <a class="nav-link" href="#"><i style="color: #DF0637;" class="fa-regular fa-envelope"></i>Email Us</a>
+            <a class="nav-link" href="{{'mailto:'.$setting->email}}" target="_blank"><i style="color: #DF0637;" class="fa-regular fa-envelope"></i>Email Us</a>
         </li>
         <div class="line"></div>
         <li class="nav-item">
-            <a class="nav-link" href="#"><i style="color: #2EBD5A;"
+            <a class="nav-link" href="{{'https://wa.me/'.$setting->whatsapp}}" target="_blank"><i style="color: #2EBD5A;"
                                             class="fa-brands fa-square-whatsapp"></i>Whatsapp</a>
         </li>
     </ul>
@@ -59,7 +59,7 @@
 
 <nav class="navbar  navbar-expand-lg navbar-light top-navbar" data-toggle="sticky-onscroll">
     <div class="container nav-content">
-        <a class="navbar-brand" href="{{route('home')}}"><img src="{{asset('images/logo.png')}}" style="width: 200px; height: 60px;"
+        <a class="navbar-brand" href="{{route('home')}}"><img src="{{asset($setting->logo ?$setting->logo : 'images/logo.png')}}" style="width: 200px; height: 60px;"
                                               class="img-fluid" alt="logo"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -124,7 +124,7 @@
                         <i class="fas fa-map-marker-alt"></i>
                         <div class="cta-text">
                             <h4>Find us</h4>
-                            <span>1010 Avenue, sw 54321, chandigarh</span>
+                            <span>{{$setting->address}}</span>
                         </div>
                     </div>
                 </div>
@@ -133,7 +133,7 @@
                         <i class="fas fa-phone"></i>
                         <div class="cta-text">
                             <h4>Call us</h4>
-                            <span>+971581243628</span>
+                            <a href="{{'tel:'.$setting->phone}}"><span>{{$setting->phone}}</span></a>
                         </div>
                     </div>
                 </div>
@@ -142,7 +142,7 @@
                         <i class="far fa-envelope-open"></i>
                         <div class="cta-text">
                             <h4>Mail us</h4>
-                            <span>attestationsdubai@gmail.com</span>
+                            <a href="{{'mailto:'.$setting->email}}"><span>{{$setting->email}}</span></a>
                         </div>
                     </div>
                 </div>
@@ -153,7 +153,7 @@
                 <div class="col-xl-4 col-lg-4 mb-50">
                     <div class="footer-widget">
                         <div class="footer-logo">
-                            <a href="index.html"><img src="images/logo.png" class="img-fluid" alt="logo"></a>
+                            <a href="index.html"><img src="{{asset($setting->logo ?$setting->logo : 'images/logo.png')}}" class="img-fluid" alt="logo"></a>
                         </div>
                         <div class="footer-text">
                             <p>Lorem ipsum dolor sit amet, consec tetur adipisicing elit, sed do eiusmod tempor
@@ -162,9 +162,9 @@
                         </div>
                         <div class="footer-social-icon">
                             <span>Follow us</span>
-                            <a href="#"><i class="fab fa-facebook-f facebook-bg"></i></a>
-                            <a href="#"><i class="fab fa-twitter twitter-bg"></i></a>
-                            <a href="#"><i class="fab fa-google-plus-g google-bg"></i></a>
+                            @foreach($socials  as $social)
+                                <a href="{{$social->link}}" target="_blank"><img src="{{asset($social->image)}}" width="30" height="30"></a>
+                            @endforeach
                         </div>
                     </div>
                 </div>
