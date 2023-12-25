@@ -119,7 +119,7 @@
         <div class="content">
             <h3>Looking for Documents to be Notarized?</h3>
             <p>Contact Us today for more details About us and documents attestation</p>
-            <button class="btn btn-primary">Call Today</button>
+            <a href="{{route('contactUs')}}" class="btn btn-primary">Call Today</a>
         </div>
     </section>
 

@@ -7,6 +7,7 @@ use App\Http\Requests\ContactFormRequest;
 use App\Models\Blogs;
 use App\Models\ContactUs;
 use App\Models\Faqs;
+use App\Models\Pricing;
 use App\Models\Services;
 use Illuminate\Http\Request;
 
@@ -70,4 +71,11 @@ class FrontController extends Controller
     public function AboutUS(){
         return view('about');
     }
+    public function Pricing(){
+        $pricing = Pricing::all();
+        return view('pricing',[
+            'pricing' => $pricing
+        ]);
+    }
+
 }

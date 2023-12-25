@@ -19,6 +19,7 @@ Route::get('/', function () {
 Route::prefix('/')->group(function () {
     Route::get('', [\App\Http\Controllers\Front\FrontController::class, 'index'])->name('main');
     Route::get('about', [\App\Http\Controllers\Front\FrontController::class, 'AboutUS'])->name('about');
+    Route::get('notary-services-fees-in-dubai', [\App\Http\Controllers\Front\FrontController::class, 'Pricing'])->name('pricing');
     Route::get('contact-us', [\App\Http\Controllers\Front\FrontController::class, 'ContactUs'])->name('contactUs');
     Route::post('contact', [\App\Http\Controllers\Front\FrontController::class, 'StoreContact'])->name('StoreContact');
     Route::get('services', [\App\Http\Controllers\Front\FrontController::class, 'Services'])->name('services');
@@ -60,6 +61,14 @@ Route::middleware(['auth', 'admin'])->prefix('admin')->group(function () {
         Route::get('/edit/{id}', [\App\Http\Controllers\Admin\BlogsController::class, 'edit'])->name('blogs.edit');
         Route::put('update/{id}', [\App\Http\Controllers\Admin\BlogsController::class, 'update'])->name('blogs.update');
         Route::get('delete/{id}', [\App\Http\Controllers\Admin\BlogsController::class, 'destroy'])->name('blogs.delete');
+    });
+    Route::prefix('/pricing')->group(function () {
+        Route::get('', [\App\Http\Controllers\Admin\PricingController::class, 'index'])->name('pricing.index');
+        Route::get('/create', [\App\Http\Controllers\Admin\PricingController::class, 'create'])->name('pricing.create');
+        Route::post('/store', [\App\Http\Controllers\Admin\PricingController::class, 'store'])->name('pricing.store');
+        Route::get('/edit/{id}', [\App\Http\Controllers\Admin\PricingController::class, 'edit'])->name('pricing.edit');
+        Route::put('update/{id}', [\App\Http\Controllers\Admin\PricingController::class, 'update'])->name('pricing.update');
+        Route::get('delete/{id}', [\App\Http\Controllers\Admin\PricingController::class, 'destroy'])->name('pricing.delete');
     });
     Route::prefix('/faq')->group(function () {
         Route::get('', [\App\Http\Controllers\Admin\FaqController::class, 'index'])->name('faq.index');

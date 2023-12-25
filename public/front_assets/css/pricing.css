@@ -1,0 +1,25 @@
+.home {
+    background-image: url(../images/pricing-gb.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 60vh;
+}
+
+
+.home h2 {
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 1.3;
+    color: #fff;
+    display: flex;
+    align-items: center;
+}
+
+.home p {
+    color: #fff;
+}
+.home .image-overlay{
+    height: 100%;
+    display: flex;
+    align-items: center;
+}

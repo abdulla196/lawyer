@@ -44,7 +44,7 @@
             <h2>15% Off for New Visitors</h2>
             <p>*If you are applying for Canada, Australia, United Kingdom, Dominica, and any Passport, Citizenship by
                 investment. You can have your immigration document notarized from us in case if it’s required.”</p>
-            <a href=""><button class="btn btn-danger">BOOK AN APPOINTMENT</button></a>
+            <a href="{{route('contactUs')}}"><button class="btn btn-danger">BOOK AN APPOINTMENT</button></a>
         </div>
     </section>
 
@@ -104,7 +104,8 @@
                                     <div id="form-message-success" class="mb-4">
                                         Your message was sent, thank you!
                                     </div>
-                                    <form method="POST" id="contactForm" name="contactForm" class="contactForm">
+                                    <form action="{{ route('StoreContact') }}" method="post">
+                                        @csrf
                                         <div class="row">
                                             <div class="col-md-6">
                                                 <div class="form-group">
@@ -118,6 +119,20 @@
                                                     <label class="label" for="email">Email Address</label>
                                                     <input type="email" class="form-control" name="email" id="email"
                                                            placeholder="Email">
+                                                </div>
+                                            </div>
+
+                                            <div class="col-md-12">
+                                                <div class="form-group">
+                                                    <label class="label" for="subject">Phone Number</label>
+                                                    <input type="number" class="form-control" name="phone" id="phone"
+                                                           placeholder="phone" value="{{old('phone')}}">
+
+                                                    @error('phone')
+                                                    <div>
+                                                        <span class="text-danger">{{ $message }}</span>
+                                                    </div>
+                                                    @enderror
                                                 </div>
                                             </div>
                                             <div class="col-md-12">

@@ -28,8 +28,8 @@
                             </p>
                             <hr style="border-top: 2px solid #fff;">
                         </div>
-                        <button class="btn btn-primary btn-service" type="submit">Our Service</button>
-                        <button class="btn btn-success btn-contact" type="submit">Contact Us</button>
+                        <a href="{{route('services')}}" class="btn btn-primary btn-service" type="submit">Our Service</a>
+                        <a href="{{route('contactUs')}}" class="btn btn-success btn-contact" type="submit">Contact Us</a>
                     </div>
                 </div>
             </div>
@@ -55,7 +55,7 @@
                         and authorized law firms. Those services include the attestation of signatures, the notarization
                         of
                         documents, and the certification of corporate and personal documents.</p>
-                    <button class="btn btn-primary">Work With Us</button>
+                    <a  href="{{route('contactUs')}}" class="btn btn-primary">Work With Us</a>
                 </div>
             </div>
             <div class="col-lg-6 col-md-6 col-sm-12">
@@ -188,7 +188,7 @@
                             Certification <br>
                             Bank Reference Letter <br>
                             Bank statements</p>
-                        <a href="">
+                        <a  href="{{route('pricing')}}">
                             <p>CHECK PRICE</p><i class="fa-solid fa-hand-holding-dollar"></i>
                         </a>
                     </div>
@@ -201,7 +201,7 @@
                         <br>
                         <p>Accounting Certification application forms</p>
                         <p>Insurance companies: Forms and Application</p>
-                        <a href="">
+                        <a href="{{route('pricing')}}">
                             <p>CHECK PRICE</p><i class="fa-solid fa-hand-holding-dollar"></i>
                         </a>
                     </div>
@@ -221,7 +221,7 @@
                             Drafting of official documents <br>
                             General Power of Attorney drafting <br>
                             Special Power of Attorney drafting</p>
-                        <a href="">
+                        <a href="{{route('pricing')}}">
                             <p>CHECK PRICE</p><i class="fa-solid fa-hand-holding-dollar"></i>
                         </a>
                     </div>
@@ -236,7 +236,7 @@
                         <br>
                         <p>Gift deed</p>
                         <p>General Declarations</p>
-                        <a href="">
+                        <a href="{{route('pricing')}}">
                             <p>CHECK PRICE</p><i class="fa-solid fa-hand-holding-dollar"></i>
                         </a>
                     </div>
@@ -268,7 +268,7 @@
                             Diplomas <br>
                             Degrees, Bachelor’s, master’s, Doctorate <br>
                             Bachelor’s Degree Certificates</p>
-                        <a href="">
+                        <a href="{{route('pricing')}}">
                             <p>CHECK PRICE</p><i class="fa-solid fa-hand-holding-dollar"></i>
                         </a>
                     </div>
@@ -294,7 +294,7 @@
                         <br>
                         <p>Memorandum of association</p>
                         <br>
-                        <a href="">
+                        <a href="{{route('pricing')}}">
                             <p>CHECK PRICE</p><i class="fa-solid fa-hand-holding-dollar"></i>
                         </a>
                     </div>
@@ -412,7 +412,7 @@
                 </div>
             </div>
             <div class="btn-center">
-                <button class="btn btn-primary">More About Us</button>
+                <a href="{{route('about')}}" class="btn btn-primary">More About Us</a>
             </div>
         </div>
     </section>
@@ -464,7 +464,7 @@
     <section class="container visit">
         <p>Get Notarized Documents today</p>
         <h1>Schedule a Visit or Call Now</h1>
-        <button class="btn btn-primary">Contact us</button>
+        <a href="{{route('contactUs')}}" class="btn btn-primary">Contact us</a>
     </section>
 
 

@@ -3,7 +3,9 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
+use App\Models\Blogs;
 use App\Models\ContactUs;
+use App\Models\Services;
 use Illuminate\Http\Request;
 
 class AdminController extends Controller
@@ -14,7 +16,14 @@ class AdminController extends Controller
     public function index()
     {
         //
-        return view('dashboard');
+        $services = Services::all()->count();
+        $messages = ContactUs::all()->count();
+        $blogs = Blogs::all()->count();
+        return view('dashboard',[
+            'services_count' => $services,
+            'messages_count' => $messages,
+            'blogs_count' => $blogs
+        ]);
     }
 
     /**
@@ -84,5 +93,7 @@ class AdminController extends Controller
         ]);
         return redirect()->route('messages')->with('success', 'تم التواصل بنجاح');
     }
-    public function Profile(){}
+    public function Profile(){
+        return view('profile.show');
+    }
 }

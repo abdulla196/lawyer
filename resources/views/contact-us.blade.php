@@ -138,8 +138,8 @@
                                     </form>
                                 </div>
                             </div>
-                            <div class="col-md-5 d-flex align-items-stretch">
-                                <div id="map">
+                            <div class="col-md-5 d-flex align-items-stretch text-center">
+                                <div id="map" style="width: 450px;margin: 0 auto">
                                 </div>
                             </div>
                         </div>
@@ -190,6 +190,27 @@
 
 
 @section('script')
+    <script async
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCio_dYQ27AHwCusft6eRbkYqBnsNX_ox0&callback=initMap">
+    </script>
+<script>
 
+    async function initMap() {
+        // Request needed libraries.
+        const { Map } = await google.maps.importLibrary("maps");
+        const { AdvancedMarkerElement } = await google.maps.importLibrary("marker");
+        const map = new Map(document.getElementById("map"), {
+            center: { lat: 25.2300594, lng: 55.2871107 },
+            zoom: 14,
+            mapId: "4504f8b37365c3d0",
+        });
+        const marker = new AdvancedMarkerElement({
+            map,
+            position: { lat: 25.2300594, lng: 55.2871107 },
+        });
+    }
+
+    initMap();
+</script>
 
 @endsection

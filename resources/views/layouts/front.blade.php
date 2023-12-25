@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+    <link rel="shortcut icon" href="{{asset('images/logo.png')}}" type="image/x-icon">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 
@@ -14,7 +14,7 @@
     <link rel="shortcut icon" type="image/x-icon" href="{{asset('front_assets/images2/favicon.png')}}">
 
     <!-- Page Title -->
-{{--    <title>{{$setting->project_name}}</title>--}}
+    <title>{{$setting->name}}</title>
 
     <!-- * INFO: ICONSCOUT CDN -->
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v2.1.6/css/unicons.css">
@@ -92,7 +92,7 @@
                     </div>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Pricing</a>
+                    <a class="nav-link" href="{{route('pricing')}}">Pricing</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="{{route('about')}}">About Us</a>
@@ -174,16 +174,11 @@
                             <h3>Useful Links</h3>
                         </div>
                         <ul>
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#">about</a></li>
-                            <li><a href="#">services</a></li>
-                            <li><a href="#">portfolio</a></li>
-                            <li><a href="#">Contact</a></li>
-                            <li><a href="#">About us</a></li>
-                            <li><a href="#">Our Services</a></li>
-                            <li><a href="#">Expert Team</a></li>
-                            <li><a href="#">Contact us</a></li>
-                            <li><a href="#">Latest News</a></li>
+                            <li><a href="{{route('main')}}">Home</a></li>
+                            <li><a href="{{route('about')}}">About us</a></li>
+                            <li><a href="{{route('services')}}">Our Services</a></li>
+                            <li><a href="{{route('contactUs')}}">Contact us</a></li>
+                            <li><a href="{{route('blogs')}}">Latest News</a></li>
                         </ul>
                     </div>
                 </div>
@@ -215,15 +210,15 @@
                     </div>
                 </div>
                 <div class="col-xl-6 col-lg-6 d-none d-lg-block text-right">
-                    <div class="footer-menu">
-                        <ul>
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#">Terms</a></li>
-                            <li><a href="#">Privacy</a></li>
-                            <li><a href="#">Policy</a></li>
-                            <li><a href="#">Contact</a></li>
-                        </ul>
-                    </div>
+{{--                    <div class="footer-menu">--}}
+{{--                        <ul>--}}
+{{--                            <li><a href="#">Home</a></li>--}}
+{{--                            <li><a href="#">Terms</a></li>--}}
+{{--                            <li><a href="#">Privacy</a></li>--}}
+{{--                            <li><a href="#">Policy</a></li>--}}
+{{--                            <li><a href="#">Contact</a></li>--}}
+{{--                        </ul>--}}
+{{--                    </div>--}}
                 </div>
             </div>
         </div>

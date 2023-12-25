@@ -86,7 +86,7 @@
                         <div class="col-xl-12">
                             <div class="card-header"> content</div>
                             <div class="form-group">
-                                <textarea id="content" class="content" name="content_service" rows="20">{{ isset($service) ? $service->content_service : old('content_service') }}</textarea>
+                                <textarea id="content" class="content" name="content_service" rows="20">{{ isset($service) ? $service->content : old('content_service') }}</textarea>
                                 @error('content_service')
                                 <div>
                                     <span class="text-danger">{{ $message }}</span>

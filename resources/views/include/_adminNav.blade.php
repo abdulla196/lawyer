@@ -68,27 +68,55 @@
                           <i class="fas fa-comment-dots"></i>
                           <span class="nav-link-text">FAQ</span>
                       </a>
-                  <div class="collapse" id="navbar-faq" style="">
-                      <ul class="nav nav-sm flex-column">
+                      <div class="collapse" id="navbar-faq" style="">
+                          <ul class="nav nav-sm flex-column">
 
-                          <li class="nav-item">
-                              <a href="{{ route('faq.create')}}" class="nav-link nav-link-sub {{request()->routeIs('faq.create') ? 'active' : '' }}">
+                              <li class="nav-item">
+                                  <a href="{{ route('faq.create')}}" class="nav-link nav-link-sub {{request()->routeIs('faq.create') ? 'active' : '' }}">
 
-                                  <i class="fas fa-comment-dots"></i>
-                                  <span class="sidenav-normal">Add faq Blogs</span>
-                              </a>
-                          </li>
+                                      <i class="fas fa-comment-dots"></i>
+                                      <span class="sidenav-normal">Add faq</span>
+                                  </a>
+                              </li>
 
-                          <li class="nav-item">
-                              <a href="{{ route('faq.index')}}" class="nav-link nav-link-sub {{request()->routeIs('faq.index') ? 'active' : '' }}">
+                              <li class="nav-item">
+                                  <a href="{{ route('faq.index')}}" class="nav-link nav-link-sub {{request()->routeIs('faq.index') ? 'active' : '' }}">
 
-                                  <i class="fas fa-comment-dots"></i>
-                                  <span class="sidenav-normal">faq List</span>
-                              </a>
-                          </li>
+                                      <i class="fas fa-comment-dots"></i>
+                                      <span class="sidenav-normal">faq List</span>
+                                  </a>
+                              </li>
 
-                      </ul>
-                  </div>
+                          </ul>
+                      </div>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link collapsed" href="#navbar-pricing" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="navbar-pricing">
+
+                          <i class="fas fa-dollar-sign"></i>
+                          <span class="nav-link-text">pricing</span>
+                      </a>
+                      <div class="collapse" id="navbar-pricing" style="">
+                          <ul class="nav nav-sm flex-column">
+
+                              <li class="nav-item">
+                                  <a href="{{ route('pricing.create')}}" class="nav-link nav-link-sub {{request()->routeIs('pricing.create') ? 'active' : '' }}">
+
+                                      <i class="fas fa-dollar-sign"></i>
+                                      <span class="sidenav-normal">Add pricing</span>
+                                  </a>
+                              </li>
+
+                              <li class="nav-item">
+                                  <a href="{{ route('pricing.index')}}" class="nav-link nav-link-sub {{request()->routeIs('pricing.index') ? 'active' : '' }}">
+
+                                      <i class="fas fa-dollar-sign"></i>
+                                      <span class="sidenav-normal">pricing List</span>
+                                  </a>
+                              </li>
+
+                          </ul>
+                      </div>
                   </li>
 
 {{--                  <li class="nav-item">--}}
