@@ -168,6 +168,23 @@
                         </div>
                     </div>
                 </div>
+
+                <div class="col-xl-4 col-lg-4 col-md-6 mb-50">
+                    {{--                    <div class="footer-widget">--}}
+                    {{--                        <div class="footer-widget-heading">--}}
+                    {{--                            <h3>Subscribe</h3>--}}
+                    {{--                        </div>--}}
+                    {{--                        <div class="footer-text mb-25">--}}
+                    {{--                            <p>Don’t miss to subscribe to our new feeds, kindly fill the form below.</p>--}}
+                    {{--                        </div>--}}
+                    {{--                        <div class="subscribe-form">--}}
+                    {{--                            <form action="#">--}}
+                    {{--                                <input type="text" placeholder="Email Address">--}}
+                    {{--                                <button><i class="fab fa-telegram-plane"></i></button>--}}
+                    {{--                            </form>--}}
+                    {{--                        </div>--}}
+                    {{--                    </div>--}}
+                </div>
                 <div class="col-xl-4 col-lg-4 col-md-6 mb-30">
                     <div class="footer-widget">
                         <div class="footer-widget-heading">
@@ -180,22 +197,6 @@
                             <li><a href="{{route('contactUs')}}">Contact us</a></li>
                             <li><a href="{{route('blogs')}}">Latest News</a></li>
                         </ul>
-                    </div>
-                </div>
-                <div class="col-xl-4 col-lg-4 col-md-6 mb-50">
-                    <div class="footer-widget">
-                        <div class="footer-widget-heading">
-                            <h3>Subscribe</h3>
-                        </div>
-                        <div class="footer-text mb-25">
-                            <p>Don’t miss to subscribe to our new feeds, kindly fill the form below.</p>
-                        </div>
-                        <div class="subscribe-form">
-                            <form action="#">
-                                <input type="text" placeholder="Email Address">
-                                <button><i class="fab fa-telegram-plane"></i></button>
-                            </form>
-                        </div>
                     </div>
                 </div>
             </div>
