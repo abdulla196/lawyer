@@ -75,9 +75,10 @@ class BlogsController extends Controller
             }
 
             $url = $request->title;
-            $modifiedText = str_replace(' ', '-', $url);
+            $string = str_replace(' ', '-', $url);
 
-            // Create a new blog record in the database
+            $modifiedText = preg_replace('/[^A-Za-z0-9\-]/', '', $string);
+            $modifiedText = preg_replace('/-+/', '-', $modifiedText);
             Blogs::create([
                 'title' => $request->title,
                 'description' => $request->description,
@@ -163,8 +164,10 @@ class BlogsController extends Controller
         }
         $user = auth()->user();
         $url = $request->title;
-        $modifiedText = str_replace(' ', '-', $url);
+        $string = str_replace(' ', '-', $url);
 
+        $modifiedText = preg_replace('/[^A-Za-z0-9\-]/', '', $string);
+        $modifiedText = preg_replace('/-+/', '-', $modifiedText);
         // Update the FAQ with the validated data
         $blog->update([
             'title' => $request->title ? $request->title : $blog->title,

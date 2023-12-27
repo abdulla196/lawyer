@@ -59,7 +59,10 @@ class ServicesController extends Controller
         }
 
         $url = $request->title;
-        $modifiedText = str_replace(' ', '-', $url);
+        $string = str_replace(' ', '-', $url);
+
+        $modifiedText = preg_replace('/[^A-Za-z0-9\-]/', '', $string);
+        $modifiedText = preg_replace('/-+/', '-', $modifiedText);
 
         // Create a new blog record in the database
         Services::create([
@@ -132,7 +135,10 @@ class ServicesController extends Controller
 
         $user = auth()->user();
         $url = $request->name;
-        $modifiedText = str_replace(' ', '-', $url);
+        $string = str_replace(' ', '-', $url);
+
+        $modifiedText = preg_replace('/[^A-Za-z0-9\-]/', '', $string);
+        $modifiedText = preg_replace('/-+/', '-', $modifiedText);
 
         // Update the FAQ with the validated data
         $serivce->update([
